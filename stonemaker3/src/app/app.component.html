@@ -1,20 +1,26 @@
- <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" [routerLink]="['./']"  >Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-       aria-expanded="false" aria-label="Toggle navigation"
-       (click)="toggleCollapsed()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
-        <div class="navbar-nav">
-      <a class="nav-item nav-link active" [routerLink]="['./home']" >Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" [routerLink]="['./about']" >About</a>
-      <a class="nav-item nav-link" [routerLink]="['./resume']" >Resume</a>
-      <a class="nav-item nav-link" [routerLink]="['./portfolio']" >Portfolio</a>
-      <a class="nav-item nav-link" [routerLink]="['./contact']" >Contact</a>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" [routerLink]="['./']">Navbar</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" 
+    (click)="toggleCollapsed()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button> -->
+
+  <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" [routerLink]="['./home']" (click)="toggleCollapsed()" >Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" [routerLink]="['./about']" (click)="toggleCollapsed()" >About</a>
+      <a class="nav-item nav-link" [routerLink]="['./resume']"(click)="toggleCollapsed()" >Resume</a>
+      <a class="nav-item nav-link" [routerLink]="['./portfolio']" (click)="toggleCollapsed()">Portfolio</a>
+      <a class="nav-item nav-link" [routerLink]="['./contact']" (click)="toggleCollapsed()" >Contact</a>
     </div>
-    </div>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>
+
