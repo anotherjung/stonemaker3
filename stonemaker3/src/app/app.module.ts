@@ -4,11 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AlertModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AlertModule.forRoot(),
+    CarouselModule.forRoot(),
     BrowserModule,
     AppRoutingModule
   ],
