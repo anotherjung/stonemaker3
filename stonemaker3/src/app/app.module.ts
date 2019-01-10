@@ -6,10 +6,20 @@ import { AppComponent } from './app.component';
 
 import { AlertModule } from 'ngx-bootstrap';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ResumeComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     AlertModule.forRoot(),
