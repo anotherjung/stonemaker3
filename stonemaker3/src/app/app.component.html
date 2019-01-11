@@ -6,20 +6,24 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a class="navbar-brand mx-auto h3" [routerLink]="['./']">Jung No</a>
+  <a class="navbar-brand mx-auto h3 order-0" [routerLink]="['./']">Jung No </a>
 
-  <a class="btn btn-primary" [routerLink]="['./contact']" (click)="toggleCollapsed()" >Contact</a>
+  <a class="btn btn-primary ml-2 order-4 " [routerLink]="['./contact']" >Contact</a>
+  
 
-  <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+  <div id="navbarSupportedContent order-2" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
     <div class="navbar-nav h3">
-      <a class="nav-item nav-link active mx-auto" [routerLink]="['./home']" (click)="toggleCollapsed()" >Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link mx-auto" [routerLink]="['./home']" (click)="toggleCollapsed()" >Home </a>
+      <!-- <span class="sr-only">(current)</span> -->
       <a class="nav-item nav-link mx-auto" [routerLink]="['./about']" (click)="toggleCollapsed()" >About</a>
       <a class="nav-item nav-link mx-auto" [routerLink]="['./resume']"(click)="toggleCollapsed()" >Resume</a>
       <a class="nav-item nav-link mx-auto" [routerLink]="['./portfolio']" (click)="toggleCollapsed()">Portfolio</a>
-      <a class="nav-item nav-link mx-auto" [routerLink]="['./contact']" (click)="toggleCollapsed()" >Contact</a>
+      <!-- <a class="nav-item nav-link mx-auto" [routerLink]="['./contact']" (click)="toggleCollapsed()" >Contact</a> -->
     </div>
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)" ></router-outlet>
+
+
 

@@ -1,28 +1,28 @@
 <div class="container-fluid">
-    <alert type="success"> about works!</alert>
+    <alert type="success"> {{title}} works!</alert>
     
       <div class="container-fluid">
           <div class="jumbotron">
-              <h1 class="display-4">Hello, {{ title }}!</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <h2 class="display-5">Do Something Today, That Your Future-self Will Thank You for.</h2>
+              <p class="lead">I am a healthy kind human that enjoys Web and Ad Technologies, Snowboarding, and Ocean Beaches.  Past five years, I have been working in the SF Bay Area, snowboarding in Lake Tahoe, and taking adventures to Hawaii.          </p>
               <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <p class="lead">
+              <p>My 2018 goals entail implementing web/ad/360/video technologies for growing businesses and organizing outdoor adventures.    Also, spend my spare time serving local communities for a better retirement by redeveloping homes.   Here is my <a class="badge badge-primary" [routerLink]="['../contact']" role="button">Contact</a>.</p>
+              
+              <p>Investment in your health and the health of your loved one.  Give the gift of health, <a href="https://www.hackensackumc.org/donate/ways-to-give/" target="_blank">Hackensack Meridian Health.</a></p>
+              <!-- <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </p>
-              <alert type="success"> hello bootstrap</alert>
+              </p>   -->
             </div>
-            <carousel>
-                <slide>
-                  <img src="https://placeimg.com/640/480/tech" alt="first slide" style="display: block; width: 100%;">
-                </slide>
-                <slide>
-                  <img src="https://placeimg.com/640/480/nature" alt="second slide" style="display: block; width: 100%;">
-                </slide>
-                <slide>
-                  <img src="https://placeimg.com/640/480/people" alt="third slide" style="display: block; width: 100%;">
-                </slide>
-              </carousel>
-        <h1></h1>
+
+        <div class="jumbotron row">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/310677694" allowfullscreen></iframe>
+              </div>
+        </div>
+        
+        
       </div>
+      <p class="lead">
+          <a class="btn btn-primary btn-lg ml-2 mt-2" [routerLink]="['../portfolio']" role="button">Portfolio</a>
+        </p>
     </div>

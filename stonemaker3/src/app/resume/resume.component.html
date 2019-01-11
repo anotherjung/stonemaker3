@@ -1,19 +1,21 @@
 <div class="container" >
-    <alert type="success"> resume works!</alert>
+    <alert type="success"> {{ title }} works!</alert>
             
       <div class="container-fluid ">
-          <div class="">
-              <h1 class="display-4">Hello, {{ title }}!</h1>
-              <p class="lead">A system thinker with nine years experience in online advertising specialized in mobile and video distribution. Skilled in ad-server tags, marketing analytics, and data integrity. Currently, exploring opportunities implementing technologies & data mining for a growing team. 
+          <div class="jumbotron">
+              <h2 class="display-5">Grow Through, What You Go Through.</h2>
+              <p class="lead">A system thinker with nine years experience in online advertising specialized in mobile and video distribution. Skilled in ad-server tags, marketing analytics, and data integrity. 
                 </p>
               <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>              
+              <p>Currently, exploring opportunities implementing technologies & data mining for a growing teams. Developing Angular Websites on Firebase intergating third-parties.  Check out my <a class="badge badge-primary" [routerLink]="['../portfolio']" role="button">Portfolio</a></p> 
+
             </div>
 
             <div class=" jumbotron">
           
-              
+                <p class="lead mr-auto">Work History</p>
             <table class="table ">
+                
                 <thead>
                   <tr>
                     <th scope="col"></th>
@@ -69,6 +71,8 @@
         
       </div>
       <p class="lead">
-          <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/jungno?trk=profile-badge" target="_blank" role="button">Linkedin Profile</a>
+          <a class="btn btn-secondary btn-lg mt-2" href="https://www.linkedin.com/in/jungno?trk=profile-badge" target="_blank" role="button">Linkedin Profile</a>
+
+          <a class="btn btn-primary btn-lg ml-2 mt-2" [routerLink]="['../portfolio']" role="button">Portfolio</a>
         </p>
-    </div>
+</div>
